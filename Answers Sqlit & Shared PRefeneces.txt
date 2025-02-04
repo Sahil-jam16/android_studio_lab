@@ -1,0 +1,802 @@
+******************************** Shared Prefence LAYOUT 1 - S *******************************************
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/FirsteditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="First Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <EditText
+        android:id="@+id/LasteditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <EditText
+        android:id="@+id/mobeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <!--on below line we are creating
+        edit text for passing data-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/cake" />
+
+        <EditText
+            android:id="@+id/idEdtDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="3"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Enter date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="303dp"
+        android:layout_height="93dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Select Gender"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="293dp"
+        android:layout_height="146dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.758">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Address" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="3"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="First Line" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="3"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Second Line" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:pointerIcon="hand"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+***************************************** SharedP refence layout 2 - S ***************************************
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="249dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="265dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Confirm" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Edit" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+********************************************* Shared PRef layout 3 -S **************************************************
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+8******************************************** Shared KT file 1 - S **************************************
+package com.example.app_6
+
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import android.app.DatePickerDialog
+import android.content.Intent
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Spinner
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import java.util.*
+
+class MainActivity : AppCompatActivity() {
+    lateinit var dateEdt: EditText
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+
+        val spinner = findViewById<Spinner>(R.id.genderSpinner)
+        val genders = arrayOf("Choose gender", "Male", "Female", "Others", "Prefer not to say")
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, genders)
+        spinner.adapter = adapter
+
+        val f = findViewById<EditText>(R.id.FirsteditText)
+        val l = findViewById<EditText>(R.id.LasteditText)
+        val mob = findViewById<EditText>(R.id.mobeditText)
+        val add_f = findViewById<EditText>(R.id.editTextText3)
+        val add_s = findViewById<EditText>(R.id.editTextText4)
+        dateEdt = findViewById(R.id.idEdtDate)
+        val but = findViewById<Button>(R.id.button)
+
+        // Load data from shared preferences if it exists
+        val sharedPreferences = getSharedPreferences("UserDetails", MODE_PRIVATE)
+        if (sharedPreferences.contains("firstName")) {
+            f.setText(sharedPreferences.getString("firstName", ""))
+            l.setText(sharedPreferences.getString("lastName", ""))
+            val gender = sharedPreferences.getString("gender", "Choose gender")
+            val genderPosition = adapter.getPosition(gender)
+            spinner.setSelection(genderPosition)
+            mob.setText(sharedPreferences.getString("mobile", ""))
+            add_f.setText(sharedPreferences.getString("addressFirst", ""))
+            add_s.setText(sharedPreferences.getString("addressSecond", ""))
+            val year = sharedPreferences.getInt("year", 0)
+            val month = sharedPreferences.getInt("month", 0)
+            val day = sharedPreferences.getInt("day", 0)
+            if (year != 0 && month + 1 != 0 && day != 0) {
+                val formattedDate = String.format(getString(R.string.date_format), day, (month+ 1), year)
+                dateEdt.setText(formattedDate)
+            }
+        }
+
+        val editor = sharedPreferences.edit()
+
+        but.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
+
+            editor.putString("firstName", f.text.toString())
+            editor.putString("lastName", l.text.toString())
+            editor.putString("gender", spinner.selectedItem.toString())
+            editor.putString("mobile", mob.text.toString())
+            editor.putString("addressFirst", add_f.text.toString())
+            editor.putString("addressSecond", add_s.text.toString())
+            editor.apply()
+
+            if(spinner.selectedItem.toString() != "Choose gender" && f.text.toString() != "" && l.text.toString() != "" && mob.text.toString().length == 10 && add_f.text.toString() != "" && add_s.text.toString() != "")
+            {
+                startActivity(intent)
+            }
+            else{
+                Toast.makeText(this, "Fill the fields properly", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        // Date picker dialog and setting date in EditText
+        dateEdt.setOnClickListener {
+            val c = Calendar.getInstance()
+            val year = c.get(Calendar.YEAR)
+            val month = c.get(Calendar.MONTH)
+            val day = c.get(Calendar.DAY_OF_MONTH)
+
+            val datePickerDialog = DatePickerDialog(
+                this,
+                { _, year, monthOfYear, dayOfMonth ->
+                    val formattedDate = String.format(getString(R.string.date_format), dayOfMonth, (monthOfYear + 1), year)
+                    dateEdt.setText(formattedDate)
+                    editor.putInt("year", year)
+                    editor.putInt("month", monthOfYear) // Correct monthOfYear
+                    editor.putInt("day", dayOfMonth) // Correct dayOfMonth
+                    editor.apply()
+                },
+                year, month, day
+            )
+            datePickerDialog.show()
+        }
+    }
+}
+
+
+****************************************** Shared Prefernce KT 2 file -S ****************************************************
+package com.example.app_6
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+
+class SecondActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.second_activity)
+
+        val cnf = findViewById<Button>(R.id.button2)
+        val edit = findViewById<Button>(R.id.button3)
+
+        val sharedPreferences = getSharedPreferences("UserDetails", MODE_PRIVATE)
+
+        val firstName = sharedPreferences.getString("firstName", "")
+        val lastName = sharedPreferences.getString("lastName", "")
+        val gender = sharedPreferences.getString("gender", "")
+        val mobile = sharedPreferences.getString("mobile", "")
+        val addressFirst = sharedPreferences.getString("addressFirst", "")
+        val addressSecond = sharedPreferences.getString("addressSecond", "")
+        val year = sharedPreferences.getInt("year", 0)
+        val month = sharedPreferences.getInt("month", 0)
+        val day = sharedPreferences.getInt("day", 0)
+
+
+        edit.setOnClickListener {
+            val intent1 = Intent(this, MainActivity::class.java).apply{
+                putExtra("firstName", firstName)
+                putExtra("lastName", lastName)
+                putExtra("gender", gender)
+                putExtra("mobile", mobile)
+                putExtra("addressFirst", addressFirst)
+                putExtra("addressSecond", addressSecond)
+                putExtra("year", year)
+                putExtra("month", month)
+                putExtra("day", day)
+            }
+
+            startActivity(intent1)
+        }
+
+        cnf.setOnClickListener {
+            val intent2 = Intent(this,ThirdActivity::class.java)
+            startActivity(intent2)
+        }
+    }
+}	
+
+
+
+
+******************************************* DB Connection Activitu Layout - S ********************************************
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Marks"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Marks:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Roll:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDENT DETAILS"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Roll"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+*************************************************** DB Conn Main Activitu KT 1 -S *****************************
+
+package com.example.studentdetaildb
+
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var dbHelper: DBHelper
+    private lateinit var editTextName: EditText
+    private lateinit var editTextRoll: EditText
+    private lateinit var editTextMarks: EditText
+    private lateinit var buttonInsert: Button
+    private lateinit var buttonViewAll: Button
+    private lateinit var textViewResult: TextView
+    private lateinit var buttonView: Button
+    private lateinit var buttonDelete: Button
+    private lateinit var buttonUpdate: Button
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+        dbHelper = DBHelper(this)
+        editTextName = findViewById(R.id.editTextText3)
+        editTextRoll = findViewById(R.id.editTextText)
+        editTextMarks = findViewById(R.id.editTextText4)
+        buttonInsert = findViewById(R.id.button5)
+        buttonViewAll = findViewById(R.id.button4)
+        buttonView = findViewById(R.id.button)
+        buttonDelete = findViewById(R.id.button2)
+        buttonUpdate = findViewById(R.id.button3)
+        textViewResult = findViewById(R.id.textViewResult)
+        buttonInsert.setOnClickListener {
+            val name = editTextName.text.toString()
+            val roll = editTextRoll.text.toString()
+            val marks = editTextMarks.text.toString()
+            dbHelper.insertStudent(name, roll, marks)
+
+            editTextName.text.clear()
+            editTextRoll.text.clear()
+            editTextMarks.text.clear()
+        }
+        buttonViewAll.setOnClickListener {
+            val students = dbHelper.getAllStudents()
+            textViewResult.text =
+                students.joinToString("\n") { "${it.name} - ${it.roll} - ${it.marks}" }
+        }
+        buttonView.setOnClickListener{
+            val roll = editTextRoll.text.toString()
+            val student = dbHelper.getStudent(roll)
+            if (student != null) {
+                textViewResult.text = "Name: ${student.name}, Roll: ${student.roll}, Marks: ${student.marks}"
+            } else {
+                textViewResult.text = "Student not found"
+            }
+            editTextRoll.text.clear()
+        }
+        buttonDelete.setOnClickListener {
+            val roll = editTextRoll.text.toString()
+            dbHelper.deleteStudent(roll)
+            textViewResult.text = "Student with Roll No $roll deleted."
+            editTextRoll.text.clear() // Clear the delete field after deletion
+        }
+        buttonUpdate.setOnClickListener {
+            val roll = editTextRoll.text.toString()
+            val name = editTextName.text.toString()
+            val marks = editTextMarks.text.toString()
+            dbHelper.updateStudent(roll, name, marks)
+            // Clear update fields
+            editTextRoll.text.clear()
+            editTextName.text.clear()
+            editTextMarks.text.clear()
+            textViewResult.text = "Student with Roll No $roll updated."
+
+        }
+    }
+}
+
+
+********************************************* DB Conn - DB helper.kt -S ******************************************************
+package com.example.studentdetaildb
+
+import android.content.ContentValues
+import android.content.Context
+import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
+
+class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+
+    companion object {
+        private const val DATABASE_NAME = "student.db"
+        private const val DATABASE_VERSION = 1
+        private const val TABLE_NAME = "students"
+        private const val COLUMN_ID = "id"
+        private const val COLUMN_NAME = "name"
+        private const val COLUMN_ROLL = "roll"
+        private const val COLUMN_MARKS = "marks"
+
+        private const val CREATE_TABLE = "CREATE TABLE $TABLE_NAME (" +
+                "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "$COLUMN_NAME TEXT, " +
+                "$COLUMN_ROLL TEXT, " +
+                "$COLUMN_MARKS TEXT)"
+    }
+
+    override fun onCreate(db: SQLiteDatabase) {
+        db.execSQL(CREATE_TABLE)
+    }
+
+    override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+        db.execSQL("DROP TABLE IF EXISTS $TABLE_NAME")
+        onCreate(db)
+    }
+
+    // Insert data
+    fun insertStudent(name: String, roll: String, marks: String) {
+        val db = this.writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_NAME, name)
+            put(COLUMN_ROLL, roll)
+            put(COLUMN_MARKS, marks)
+        }
+        db.insert(TABLE_NAME, null, values)
+        db.close()
+    }
+
+
+    // Update student details by roll number
+    fun updateStudent(roll: String, name: String, marks: String) {
+        val db = this.writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_NAME, name)
+            put(COLUMN_MARKS, marks)
+        }
+        db.update(TABLE_NAME, values, "$COLUMN_ROLL = ?", arrayOf(roll))
+        db.close()
+    }
+
+    // Delete data
+    fun deleteStudent(id: String) {
+        val db = this.writableDatabase
+        db.delete(TABLE_NAME, "$COLUMN_ROLL = ?", arrayOf(id))
+        db.close()
+    }
+
+    // Retrieve all students
+    fun getAllStudents(): List<Student> {
+        val students = mutableListOf<Student>()
+        val db = this.readableDatabase
+        val cursor: Cursor = db.rawQuery("SELECT * FROM $TABLE_NAME", null)
+
+        if (cursor.moveToFirst()) {
+            do {
+                val student = Student(
+                    id = cursor.getInt(cursor.getColumnIndex(COLUMN_ID)),
+                    name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME)),
+                    roll = cursor.getString(cursor.getColumnIndex(COLUMN_ROLL)),
+                    marks = cursor.getString(cursor.getColumnIndex(COLUMN_MARKS))
+                )
+                students.add(student)
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+        db.close()
+        return students
+    }
+
+    // Retrieve a student by roll number
+    fun getStudent(roll: String): Student? {
+        val db = this.readableDatabase
+        val cursor: Cursor = db.query(
+            TABLE_NAME,
+            null,
+            "$COLUMN_ROLL = ?",
+            arrayOf(roll),
+            null,
+            null,
+            null
+        )
+        var student: Student? = null
+        if (cursor.moveToFirst()) {
+            student = Student(
+                id = cursor.getInt(cursor.getColumnIndex(COLUMN_ID)),
+                name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME)),
+                roll = cursor.getString(cursor.getColumnIndex(COLUMN_ROLL)),
+                marks = cursor.getString(cursor.getColumnIndex(COLUMN_MARKS))
+            )
+        }
+        cursor.close()
+        db.close()
+        return student
+    }
+
+}
+
+// Data class for Student
+data class Student(
+    val id: Int,
+    val name: String,
+    val roll: String,
+    val marks: String
+)
